@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gratitude Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <main>
+       <h1 id="title">Gratitude Form</h1>
+       <div class="main-div">
+           <p id="description">Tell us about for what you are grateful today</p>
+           <form id="survey-form">
+               <div class="form-rows">
+                   <div class="labels">
+                       <label for="name" id="name-label">Name</label>
+                   </div>
+                   <div class="fields">
+                        <input type="text" id="name" class="input-fields" placeholder="Enter your name" required>
+                    </div>
+               </div>
+               <div class="form-rows">
+                    <div class="labels">
+                        <label for="email" id="email-label">E-mail</label>
+                    </div>   
+                    <div class="fields">
+                        <input type="text" id="email" class="input-fields" placeholder="Enter your e-mail" required>
+                    </div>
+               </div>
+               <div class="form-rows">
+                   <div class="labels">
+                       <label for="dropdown" id="dropdown-label">Where did it happen?</label>
+                   </div>
+                   <div class="fields">
+                        <select name="Location of an event" id="dropdown" class="dropdown">
+                            <option value="home">At home</option>
+                            <option value="work">At work</option>
+                            <option value="street">On street</option>
+                            <option value="commute">While commute</option>
+                            <option value="other">Other</option>
+                        </select>
+                   </div>
+               </div>
+                <div class="form-rows">
+                   <div class="labels">
+                       <label for="time-of-day">What time did it happen</label>  
+                   </div>
+                   <div class="fields">
+                       <ul id="time-of-day" style="list-style:none;">
+                            <li class="radio">
+                                <label>Morning
+                                     <input name="time-radio" type="radio" value="1" class="user-selection">
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>Afternoon
+                                     <input name="time-radio" type="radio" value="2" class="user-selection">
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>Evening
+                                     <input name="time-radio" type="radio" value="3" class="user-selection">
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>Night
+                                     <input name="time-radio" type="radio" value="4" class="user-selection">
+                                </label>
+                            </li>
+                       </ul>
+                   </div>
+                </div>
+                <div class="form-rows">
+                    <div class="labels">
+                        <label for="feelings">What emotions did you experience?
+                            <br>(Select all that apply)</label>  
+                    </div>
+                   <div class="fields">
+                        <ul id="feelings" style="list-style: none;">
+                            <li class="check">
+                                <label>Excited
+                                    <input name="feeling-check" value="1" type="checkbox" class="user-selection">
+                                </label>
+                            </li>
+                            <li class="check">
+                                <label>Humbled
+                                    <input name="feeling-check" value="2" type="checkbox" class="user-selection">
+                                </label>
+                            </li>
+                            <li class="check">
+                                <label>Loved
+                                    <input name="feeling-check" value="3" type="checkbox" class="user-selection">
+                                </label>
+                            </li>
+                            <li class="check">
+                                <label>Enthusiastic
+                                    <input name="feeling-check" value="4" type="checkbox" class="user-selection">
+                                </label>
+                            </li>
+                        </ul>
+                   </div>
+               </div>
+               <div class="form-rows">
+                   <div class="labels">
+                       <label for="event-details">
+                            Please describe your experience (How did you feel?)
+                       </label>
+                   </div>
+                   <div class="fields">
+                        <textarea name="input-fields" id="event-details" cols="30" rows="30"  style="height: 50px;resize:vertical;" placeholder="Enter your experience here..."></textarea>
+                   </div>
+               </div>
+               <button class="button" id="submit" type="submit">Submit</button>
+           </form>
+       </div>
+   </main>
+</body>    
+</html>
