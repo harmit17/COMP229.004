@@ -3,8 +3,6 @@ File Name - app.js
 Student Name - Harmit Chauhan
 Student ID - 301221772
 */
-
-
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
