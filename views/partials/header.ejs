@@ -79,7 +79,31 @@
             </a>
         </li>
 
-        
+        <li class="nav-item">  
+            <% if (typeof userName == 'string' && userName) { %>
+              <a class="nav-link" href="/users/logout" onclick="return confirm('Sure ?')"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout </a>
+            <% } else { %>
+                <% if (title == "Login") { %>
+              <a class="nav-link active" href="/users/login">
+                <%} else { %> 
+                    <a class="nav-link" href="/users/login">
+                        <% } %>
+                  <i class="fa fa-sign-in" aria-hidden="true"></i> login  </a>
+            </a>
+            <% } %>            
+            
+          </li> 
+      
+        <li class="nav-item"> 
+            <% if (title == "Contact List") { %>
+                <a class="nav-link active" href="/users/login">
+            <%} else { %>
+                <a class="nav-link" href="/users/login">
+            <% } %>
+            <i class="fa fa-th-list fa-1x"></i> Contact List  </a>
+            </a>
+        </li>
+
       
     </ul>
   </p>
